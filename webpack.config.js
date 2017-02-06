@@ -28,6 +28,14 @@ module.exports = {
           'css-loader',
           'sass-loader',
         ]
+      },
+      {
+        test: /\.png$/,
+        use: { loader: 'url-loader', options: { limit: 100000 } },
+      },
+      {
+        test: /\.jpg$/,
+        use: [ 'file-loader' ]
       }
     ]
   },

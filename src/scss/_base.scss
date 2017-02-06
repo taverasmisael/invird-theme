@@ -1,3 +1,10 @@
 body {
+  background: $c-grey--light;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }

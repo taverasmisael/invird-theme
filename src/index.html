@@ -1,40 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Insituto Nacional de la Vivienda</title>
 </head>
+
 <body>
-  
+
   <header class="header">
-    <div class="header__head"></div>
-    <nav class="header__nav"></nav>
+    <div class="header__head">
+      <div class="row">
+        <div class="header__img-container col col-sm-10 col-md-4">
+          <img src="assets/images/logo-invi-f.png" alt="Instituto Nacional de la Vivienda Logo" class="img-fluid header__logo">
+        </div>
+        <div class="header__search hidden-sm-down col offset-lg-5 offset-md-4">
+          <div class="header__img-container hidden-sm-down">
+            <img src="assets/images/escudo.png" alt="Escudo De la Republica Dominicana" class="img-fluid shield header__shield">
+          </div>
+          <form id="site-search" action="#" role="search" class="header__search-form">
+            <div class="input-group">
+              <span id="search-icon" class="input-group-addon material-icons">search</span>
+              <input id="s" type="search" name="s" class="form-control" placeholder="Buscar en el INVI" aria-describedby="search-icon">
+              <button class="sr-only sr-only-focusable" type="submit">Buscar</button>
+            </div>
+          </form>
+          <ul class="header__links list-inline">
+            <li class="header__link list-inline-item"><a href="#">Inicio</a></li>
+            <li class="header__link list-inline-item"><a href="#">Mapa de Sitio</a></li>
+            <li class="header__link list-inline-item"><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="header__nav navbar navbar-toggleable-md" role="navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir Menú de Navegación">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="header__nav__menu collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(Actual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Transparencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CEP - INVI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comité de Calidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
     <!-- The Main Content -->
   </main>
   <footer class="footer">
-      <div class="footer__ministeries">
-        <!-- Ministeries Selection -->
+    <div class="footer__ministeries">
+      <!-- Ministeries Selection -->
+    </div>
+    <div class="footer__inner">
+      <div class="footer__nav">
+        <!-- Footer Sitemap -->
       </div>
-      <div class="footer__inner">
-        <div class="footer__nav">
-          <!-- Footer Sitemap -->
+      <div class="footer__final">
+        <div class="footer__badges">
+          <!-- Logo y Escudo con la Linea Vertical -->
         </div>
-        <div class="footer__final">
-          <div class="footer__badges">
-            <!-- Logo y Escudo con la Linea Vertical -->
-          </div>
-          <div class="footer__copy">
-            <!-- Copyright e información de contacto -->
-          </div>
+        <div class="footer__copy">
+          <!-- Copyright e información de contacto -->
         </div>
       </div>
+    </div>
   </footer>
 
   <script src="/assets/commons.js"></script>
   <script src="/assets/app.bundle.js"></script>
 </body>
+
 </html>
