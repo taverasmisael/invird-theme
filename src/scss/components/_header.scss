@@ -1,7 +1,7 @@
 .header {
   $selector: 'header';
 
-  .header__head {
+  .#{$selector}__head {
     @include make-container;
     @media (min-width: 40em) {
       max-width: 71.25rem;
@@ -9,6 +9,40 @@
 
     & > .row {
       align-items: center;
+    }
+  }
+
+  .#{$selector}__img-container {
+    margin: .5em 0;
+  }
+
+  .#{$selector}__search-form {
+
+    .input-group-addon {
+      background-color: #fff;
+    }
+  }
+
+  .#{$selector}__links {
+    display: flex;
+    font-size: .8rem;
+    justify-content: space-around;
+    padding: .5em 0;
+
+    .#{$selector}__link {
+      display: inline-block;
+      flex: 1;
+      padding: 0;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-right: 1px solid currentColor;
+        margin-right: 0;
+      }
+
+      a {
+        color: $c-text;
+      }
     }
   }
 }
