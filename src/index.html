@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Insituto Nacional de la Vivienda</title>
 </head>
+
 <body>
-  
+
   <header class="header">
-    <div class="header__head"></div>
+    <div class="header__head">
+      <div class="row">
+        <div class="header__img-container col-8 col-sm-3">
+          <img src="assets/images/logo-invi-f.png" alt="Instituto Nacional de la Vivienda Logo" class="img-fluid header__logo">
+        </div>
+        <div class="header__search col-sm-3 offset-sm-6">
+          <div class="header__img-container">
+            <img src="assets/images/escudo.png" alt="Escudo De la Republica Dominicana" class="img-fluid shield header__shield">
+          </div>
+          <form id="site-search" action="#" role="search" class="header__search-form">
+            <div class="input-group">
+              <span id="search-icon" class="input-group-addon material-icons">search</span>
+              <input id="s" type="search" name="s" class="form-control" placeholder="Buscar en el INVI" aria-describedby="search-icon">
+            </div>
+          </form>
+          <ul class="header__links list-inline">
+            <li class="header__link list-inline-item"><a href="#">Inicio</a></li>
+            <li class="header__link list-inline-item"><a href="#">Mapa del Sitio</a></li>
+            <li class="header__link list-inline-item"><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <nav class="header__nav"></nav>
   </header>
   <main>
     <!-- The Main Content -->
   </main>
   <footer class="footer">
-      <div class="footer__ministeries">
-        <!-- Ministeries Selection -->
+    <div class="footer__ministeries">
+      <!-- Ministeries Selection -->
+    </div>
+    <div class="footer__inner">
+      <div class="footer__nav">
+        <!-- Footer Sitemap -->
       </div>
-      <div class="footer__inner">
-        <div class="footer__nav">
-          <!-- Footer Sitemap -->
+      <div class="footer__final">
+        <div class="footer__badges">
+          <!-- Logo y Escudo con la Linea Vertical -->
         </div>
-        <div class="footer__final">
-          <div class="footer__badges">
-            <!-- Logo y Escudo con la Linea Vertical -->
-          </div>
-          <div class="footer__copy">
-            <!-- Copyright e información de contacto -->
-          </div>
+        <div class="footer__copy">
+          <!-- Copyright e información de contacto -->
         </div>
       </div>
+    </div>
   </footer>
 
   <script src="/assets/commons.js"></script>
   <script src="/assets/app.bundle.js"></script>
 </body>
+
 </html>
