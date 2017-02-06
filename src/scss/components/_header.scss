@@ -19,7 +19,7 @@
   .#{$selector}__search-form {
 
     .input-group-addon {
-      background-color: #fff;
+      background-color: $c-white;
     }
   }
 
@@ -42,6 +42,51 @@
 
       a {
         color: $c-text;
+      }
+    }
+  }
+
+  .#{$selector}__nav {
+    background: $c-primary;
+    color: $c-white;
+    padding: 0;
+    position: static;
+    @media (min-width: 40em) {
+      padding: 0 1rem;
+     }
+
+    .navbar-toggler {
+      font-size: 2rem;
+      top: 4rem;
+
+      .material-icons {
+        font-size: 1em;
+      }
+    }
+
+    &__menu {
+      @media (min-width: 40em) {
+        @include make-container;
+        max-width: 71.25rem;
+      }
+
+      .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .nav-item {
+        transition: background-color 350ms ease;
+
+        &.active,
+        &:hover {
+          background-color: rgba(0, 0, 0, .2);
+        }
+
+        .nav-link {
+          color: $c-white;
+          padding: 1.5em;
+        }
       }
     }
   }
