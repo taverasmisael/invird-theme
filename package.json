@@ -2,7 +2,7 @@
   "name": "invi-theme",
   "version": "0.0.1",
   "scripts": {
-    "serve": "webpack-dev-server --inline --colors --hot --compress",
+    "serve": "webpack-dev-server --inline --colors --progress --hot --compress",
     "build": "webpack -p"
   },
   "devDependencies": {
