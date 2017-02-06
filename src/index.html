@@ -14,17 +14,18 @@
   <header class="header">
     <div class="header__head">
       <div class="row">
-        <div class="header__img-container col-8 col-sm-3">
+        <div class="header__img-container col col-sm-4 col-md-4">
           <img src="assets/images/logo-invi-f.png" alt="Instituto Nacional de la Vivienda Logo" class="img-fluid header__logo">
         </div>
-        <div class="header__search col-sm-3 offset-sm-6">
-          <div class="header__img-container">
+        <div class="header__search col-sm-3 offset-sm-5">
+          <div class="header__img-container hidden-xs-down">
             <img src="assets/images/escudo.png" alt="Escudo De la Republica Dominicana" class="img-fluid shield header__shield">
           </div>
           <form id="site-search" action="#" role="search" class="header__search-form">
             <div class="input-group">
               <span id="search-icon" class="input-group-addon material-icons">search</span>
               <input id="s" type="search" name="s" class="form-control" placeholder="Buscar en el INVI" aria-describedby="search-icon">
+              <button class="sr-only sr-only-focusable" type="submit">Buscar</button>
             </div>
           </form>
           <ul class="header__links list-inline">

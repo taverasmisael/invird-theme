@@ -1,0 +1,14 @@
+.header {
+  $selector: 'header';
+
+  .header__head {
+    @include make-container;
+    @media (min-width: 40em) {
+      max-width: 71.25rem;
+    }
+
+    & > .row {
+      align-items: center;
+    }
+  }
+}
