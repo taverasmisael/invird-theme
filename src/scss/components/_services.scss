@@ -1,0 +1,57 @@
+.service__container {
+  .service {
+    $selector: 'service';
+    background-color: $c-primary;
+    border: 1px solid currentColor;
+    color: $c-white;
+    padding: 2rem;
+    text-align: center;
+
+    .#{$selector}__icon,
+    .#{$selector}__name,
+    .#{$selector}__description,
+    .#{$selector}__cta {
+      margin: 1rem 0;
+    }
+
+    .#{$selector}__icon {
+      border: 2px solid;
+      border-radius: 50%;
+      font-size: 5em;
+      height: 1.5em;
+      line-height: 1;
+      margin-bottom: .5rem;
+      padding: .2em;
+      position: relative;
+      text-align: center;
+      width: 1.5em;
+
+      &::before {
+        text-shadow: 6px 6px $c-text--opaque;
+      }
+
+      &.fa-cubes::before {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-46%);
+      }
+    }
+
+    .#{$selector}__name {
+      line-height: 1.3;
+    }
+
+    .#{$selector}__description {
+      color: $c-white--opaque;
+    }
+
+    .#{$selector}__cta {
+      text-transform: uppercase;
+    }
+
+    &.col {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}

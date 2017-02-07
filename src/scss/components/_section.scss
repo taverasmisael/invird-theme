@@ -1,0 +1,21 @@
+.section {
+  $selector: 'section';
+  background: $c-white;
+  padding: 1rem;
+
+  &.#{$selector}--container {
+    @include section-container(true);
+    margin: 0 auto;
+  }
+
+  .#{$selector}__title {
+    color: $c-primary--ligth;
+    font-weight: bold;
+    margin: .8em 0;
+    text-transform: uppercase;
+
+    &.#{$selector}__title--center {
+      text-align: center;
+    }
+  }
+}
