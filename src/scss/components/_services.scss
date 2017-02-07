@@ -47,6 +47,11 @@
 
     .#{$selector}__cta {
       text-transform: uppercase;
+
+      &:hover {
+        box-shadow: 6px 6px 6px $c-text--opaque;
+        transform: translateY(-3px);
+      }
     }
 
     &[class^='col'] {
