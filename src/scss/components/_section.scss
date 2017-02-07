@@ -1,7 +1,22 @@
+.section-container {
+  @include section-container(true);
+  margin: 0 auto;
+}
+
 .section {
   $selector: 'section';
   background: $c-white;
   padding: 1rem;
+
+  &.#{$selector}--container {
+    @include section-container(true);
+    margin: 0 auto;
+  }
+
+  &.#{$selector}-background {
+    background: $c-primary;
+    color: $c-white;
+  }
 
   & &__header {
     @extend .mb-3;
@@ -14,10 +29,6 @@
     .#{$selector}__title {
       margin: 0;
     }
-  }
-  &.#{$selector}--container {
-    @include section-container(true);
-    margin: 0 auto;
   }
 
   .#{$selector}__title {
