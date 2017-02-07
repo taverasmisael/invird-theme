@@ -1,0 +1,11 @@
+.slider {
+  &-container {
+    background: {
+      color: $c-grey;
+      image: url('//unsplash.it/1366/450'); //../assets/images/slider-holder.jpg
+      size: cover;
+    }
+    min-height: 450px;
+    width: 100%;
+  }
+}
