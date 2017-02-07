@@ -14,12 +14,18 @@ module.exports = {
     contentBase: path.resolve(__dirname, './src') // New
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         loader: 'babel-loader',
         options: { presets: ['es2015'] },
         exclude: [/node_modules/]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ]
       },
       {
         test: /\.(sass|scss)$/,
@@ -35,17 +41,33 @@ module.exports = {
       },
       {
         test: /\.jpg$/,
-        use: [ 'file-loader' ]
+        use: ['file-loader']
+      },
+      {
+        test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      }, {
+        test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      }, {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url-loader?limit=10000&mimetype=application/octet-stream"
+      }, {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "file-loader"
+      }, {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url-loader?limit=10000&mimetype=image/svg+xml"
       }
     ]
   },
   plugins: [new webpack.optimize.CommonsChunkPlugin({
-      name: 'commons',
-      filename: 'commons.js',
-      minChunks: 2
-    }), new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        Tether: 'tether'
-    })]
+    name: 'commons',
+    filename: 'commons.js',
+    minChunks: 2
+  }), new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    Tether: 'tether'
+  })]
 };
