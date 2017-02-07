@@ -70,11 +70,11 @@
     </nav>
   </header>
   <main>
-    <section class="slider">
+    <section id="slider" class="slider">
       <button type=button class="slider__control slider__control--backward">
         <i class="fa fa-angle-left icon"></i>
       </button>
-      <div class="slider__container">
+      <div id="#mainSlider" class="slider__container mainSlider">
         <a href="#" class="slide">
           <img src="//unsplash.it/1300/450/?random" alt="">
         </a>
@@ -286,6 +286,43 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="projects" class="section section--container">
+      <h2 class="section__title">Últimos Proyectos</h2>
+      <div class="slider">
+        <button type=button class="slider__control slider__control--backward">
+        <i class="fa fa-angle-left icon"></i>
+      </button>
+        <div id="#projectSlider" class="slider__container slider__container--multi projectSlider">
+          <div href="#" class="slide slide--has-caption">
+            <img src="/assets/images/project-1.jpg" alt="Proyecto 1">
+            <a href="#" class="slide__caption" titulo="Nombre del Proyecto">[Santo Domingo]: Proyecto Siembra</a>
+          </div>
+          <div href="#" class="slide slide--has-caption">
+            <img src="/assets/images/project-2.jpg" alt="Proyecto 2">
+            <a href="#" class="slide__caption" titulo="Nombre del Proyecto">[Santo Domingo Este]: Construcción Apartamental</a>
+          </div>
+          <div href="#" class="slide slide--has-caption">
+            <img src="/assets/images/project-3.jpg" alt="Proyecto 3">
+            <a href="#" class="slide__caption" titulo="Nombre del Proyecto">[Santo Domingo]: Junta de Vecinos</a>
+          </div>
+          <div href="#" class="slide slide--has-caption">
+            <img src="/assets/images/project-4.jpg" alt="Proyecto 4">
+            <a href="#" class="slide__caption" titulo="Nombre del Proyecto">[Santo Domingo]: Revisión Viviendas Capotillo</a>
+          </div>
+          <div href="#" class="slide slide--has-caption">
+            <img src="/assets/images/project-5.jpg" alt="Proyecto 5">
+            <a href="#" class="slide__caption" titulo="Nombre del Proyecto">[Valverde]: Construcción de viviendas</a>
+          </div>
+          <div href="#" class="slide slide--has-caption">
+            <img src="/assets/images/project-6.jpg" alt="Proyecto 6">
+            <a href="#" class="slide__caption" titulo="Nombre del Proyecto">[Santiago]: Visita Presidencial e Inauguración</a>
+          </div>
+        </div>
+        <button type=button class="slider__control slider__control--forward">
+        <i class="fa fa-angle-right icon"></i>
+      </button>
       </div>
     </section>
   </main>
