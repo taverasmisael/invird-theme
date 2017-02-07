@@ -1,0 +1,53 @@
+.footer {
+  $selector: 'footer';
+
+  .#{$selector}__mininstries {
+    /*Footer para los ministerios*/
+  }
+
+  .#{$selector}__inner {
+    background: $c-accent--blue;
+    color: $c-white;
+    padding: 1rem;
+    a {
+      color: $c-white;
+    }
+    .#{$selector}__nav{
+      margin: 2rem auto 5rem auto;
+
+      &__tree {
+        @extend .list-unstyled;
+      }
+      &__tree-name {
+        color: $c-white;
+        font-size: 1.17em;
+        margin: .5em 0;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      &__link,
+      &__link a {
+        color: $c-white--opaque;
+        margin-bottom: .7em;
+        text-transform: uppercase;
+        &:hover {
+          color: $c-white;
+        }
+      }
+      &__link {
+        font-size: .9rem;
+      }
+    }
+
+    .#{$selector}__final {
+      .#{$selector}__badges {
+        /*Escsudo y Logo del Footer*/
+      }
+
+      .#{$selector}__copy {
+        /*final Copyright*/
+      }
+    }
+  }
+}
