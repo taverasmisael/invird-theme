@@ -1,11 +1,57 @@
 .slider {
-  &-container {
-    background: {
-      color: $c-grey;
-      image: url('//unsplash.it/1366/450'); //../assets/images/slider-holder.jpg
-      size: cover;
-    }
-    min-height: 450px;
+  $selector: 'slider';
+  position: relative;
+  width: 100%;
+
+  .#{$selector}__container {
     width: 100%;
+  }
+
+  &:hover {
+    .#{$selector}__control {
+      opacity: 1;
+    }
+  }
+  .slide {
+    display: block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .#{$selector}__control {
+    background: $c-accent;
+    border: 0;
+    color: $c-white;
+    font-size: 2.4rem;
+    height: 1em;
+    opacity: 0.2;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    transition: opacity 350ms ease;
+    vertical-align: middle;
+    width: 1em;
+    z-index: 9999;
+
+    &:hover,
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+
+    .icon {
+      display: block;
+    }
+
+    &.#{$selector}__control--forward {
+      right: .5rem;
+    }
+    &.#{$selector}__control--backward {
+      left: .5rem;
+    }
   }
 }
