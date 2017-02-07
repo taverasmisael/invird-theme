@@ -3,6 +3,18 @@
   background: $c-white;
   padding: 1rem;
 
+  & &__header {
+    @extend .mb-3;
+    align-items: center;
+    border-bottom: 1px solid $c-grey--opaque;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+
+    .#{$selector}__title {
+      margin: 0;
+    }
+  }
   &.#{$selector}--container {
     @include section-container(true);
     margin: 0 auto;

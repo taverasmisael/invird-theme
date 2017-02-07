@@ -1,0 +1,28 @@
+.news-list {
+  .news {
+    $selector: 'news';
+    @extend .mb-3;
+    align-items: center;
+
+    .#{$selector}__image {
+
+    }
+
+    .#{$selector}__title {
+      color: $c-primary;
+      font-weight: bold;
+      a,
+      a:hover {
+        color: $c-primary;
+      }
+    }
+
+    .#{$selector}__excerpt {
+
+    }
+
+    .#{$selector}__cta {
+
+    }
+  }
+}
