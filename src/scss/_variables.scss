@@ -1,6 +1,8 @@
 $enable-print-styles: false; // We don't need this styles for now
 
 $c-primary: #003463; // Deep Blue
+$c-primary--dark: #012234;
+$c-primary--opaque: rgba($c-primary, .7);
 $c-primary--ligth: #0078b7; // Light Blue
 $c-accent: #d6193f; // Red
 $c-white: #fff;

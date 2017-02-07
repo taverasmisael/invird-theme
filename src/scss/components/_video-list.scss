@@ -1,0 +1,31 @@
+.video-list {
+  $selector: 'video-list';
+
+  .#{$selector}__header {
+    background: $c-primary--dark;
+    color: $c-white;
+    display: flex;
+    padding: 1rem;
+
+    &--red {
+      background: $c-accent;
+    }
+
+    .#{$selector}__title {
+      color: $c-white--opaque;
+      font-size: (30rem / 16);
+      margin: 0;
+      text-transform: uppercase;
+
+      small {
+        font-size: .4em;
+      }
+    }
+  }
+
+  &--side {
+    [class^='col'] {
+      margin-bottom: 2rem;
+    }
+  }
+}

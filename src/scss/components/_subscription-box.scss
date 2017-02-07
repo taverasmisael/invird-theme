@@ -1,0 +1,23 @@
+.subscription-box__form {
+  align-items: flex-end;
+  background: $c-white;
+  display: flex;
+  padding: 1em;
+
+  .form-group {
+    flex: 1;
+  }
+
+  .form-control {
+    border: 0;
+    border-bottom: 1px solid $c-grey--opaque;
+    border-radius: 0;
+    box-shadow: none;
+    transition: border-bottom-color 350ms ease;
+    width: 95%;
+
+    &:focus {
+      border-bottom-color: $c-accent;
+    }
+  }
+}
