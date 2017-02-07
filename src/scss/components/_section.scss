@@ -16,6 +16,10 @@
   &.#{$selector}-background {
     background: $c-primary;
     color: $c-white;
+
+    .#{$selector}__title {
+      color: $c-white;
+    }
   }
 
   & &__header {
