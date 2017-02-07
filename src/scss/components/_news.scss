@@ -11,14 +11,14 @@
     .#{$selector}__title {
       color: $c-primary;
       font-weight: bold;
-      a,
-      a:hover {
+
+      &:hover {
         color: $c-primary;
       }
     }
 
     .#{$selector}__excerpt {
-
+      color: $c-grey;
     }
 
     .#{$selector}__cta {
