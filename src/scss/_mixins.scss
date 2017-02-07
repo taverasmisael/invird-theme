@@ -1,0 +1,13 @@
+@mixin section-container($full: false) {
+  @if($full) {
+    @include make-container;
+    @media (min-width: 40em) {
+      max-width: 71.25rem;
+    }
+  } @else {
+    @media (min-width: 40em) {
+      @include make-container;
+      max-width: 71.25rem;
+    }
+  }
+}
