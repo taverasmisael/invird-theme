@@ -1,0 +1,16 @@
+.ministery {
+  display: block;
+  color: $c-grey--darker;
+  text-align: center;
+  margin-bottom: 0.9em;
+  &__name {
+    color: $c-grey--darker;
+    display: block;
+    font-weight: normal;
+  }
+
+  &__link {
+    color: $c-grey--darker;
+    font-weight: bold;
+  }
+}

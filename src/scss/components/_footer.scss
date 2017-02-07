@@ -1,29 +1,40 @@
 .footer {
   $selector: 'footer';
 
-  .#{$selector}__mininstries {
-    /*Footer para los ministerios*/
+  .#{$selector}__ministries {
+    background: $c-grey--opaque;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    &__selector {
+      border-bottom: 1px dotted $c-grey--darker;
+      cursor: pointer;
+      padding-bottom: .2em;
+    }
   }
 
   .#{$selector}__inner {
     background: $c-accent--blue;
     color: $c-white;
     padding: 1rem;
+
     a {
       color: $c-white;
     }
+
     .#{$selector}__nav{
-      margin: 2rem auto 5rem auto;
+      margin: 2rem auto 5rem;
 
       &__tree {
         @extend .list-unstyled;
       }
+
       &__tree-name {
         color: $c-white;
         font-size: 1.17em;
+        font-weight: bold;
         margin: .5em 0;
         text-transform: uppercase;
-        font-weight: bold;
       }
 
       &__link,
@@ -31,10 +42,12 @@
         color: $c-white--opaque;
         margin-bottom: .7em;
         text-transform: uppercase;
+
         &:hover {
           color: $c-white;
         }
       }
+
       &__link {
         font-size: .9rem;
       }
@@ -44,9 +57,11 @@
       .#{$selector}__badges {
         margin-bottom: 1.3rem;
         text-align: center;
+
         &__logos {
           display: inline
         }
+
         .footer-logo {
           margin: 0 1.6rem;
           width: 70px;
@@ -55,9 +70,11 @@
 
       .#{$selector}__copy {
         text-align: center;
+
         a {
           text-decoration: underline;
         }
+
         .#{$selector}-info {
           font-size: (13rem / 16);
         }

@@ -8,6 +8,7 @@ $c-accent--blue: #1c485f;
 $c-white: #fff;
 $c-white--opaque: rgba($c-white, .7);
 $c-grey: #828385; // Dark Grey
+$c-grey--darker: darken($c-grey, 20);
 $c-grey--opaque: rgba($c-grey, .3); // Dark Grey
 $c-grey--light: #f5f5f5;
 $c-text: #292b2c; // Bootstrap Black Text
