@@ -42,11 +42,25 @@
 
     .#{$selector}__final {
       .#{$selector}__badges {
-        /*Escsudo y Logo del Footer*/
+        margin-bottom: 1.3rem;
+        text-align: center;
+        &__logos {
+          display: inline
+        }
+        .footer-logo {
+          margin: 0 1.6rem;
+          width: 70px;
+        }
       }
 
       .#{$selector}__copy {
-        /*final Copyright*/
+        text-align: center;
+        a {
+          text-decoration: underline;
+        }
+        .#{$selector}-info {
+          font-size: (13rem / 16);
+        }
       }
     }
   }
