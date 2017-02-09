@@ -1,6 +1,9 @@
 .header {
   $selector: 'header';
 
+  .#{$selector}__logo {
+    width: 50%;
+  }
   .#{$selector}__head {
     @include section-container(true);
 
@@ -80,6 +83,9 @@
         .nav-link {
           color: $c-white;
           padding: 1.5em;
+          &:hover {
+            border-bottom: 0;
+          }
         }
       }
     }
