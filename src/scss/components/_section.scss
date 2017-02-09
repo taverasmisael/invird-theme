@@ -13,9 +13,24 @@
     margin: 0 auto;
   }
 
+  &.#{$selector}--page-title {
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   &.#{$selector}-background {
     background: $c-primary;
     color: $c-white;
+
+    &.#{$selector}-background--light {
+      background: $c-primary--ligth;
+    }
+
+    &.#{$selector}-background--dark {
+      background: $c-primary--hovered;
+    }
 
     .#{$selector}__title {
       color: $c-white;
