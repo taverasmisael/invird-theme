@@ -1,0 +1,18 @@
+.clerk-list {
+  $selector: 'clerk';
+
+  .#{$selector} {
+    margin-bottom: 1.5rem;
+    padding: .5em;
+
+    & > * {
+      display: block;
+    }
+
+    .#{$selector}__name {
+      color: $c-primary--ligth;
+      font-weight: bold;
+    }
+  }
+
+}
