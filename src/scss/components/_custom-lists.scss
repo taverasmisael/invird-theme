@@ -1,0 +1,17 @@
+.file-list {
+  $selector: 'file-list';
+
+  .#{$selector}__item {
+    background: {
+      image: url('../assets/icons/file.png');
+      position: left center;
+      size: 1em;
+    }
+    background-repeat: no-repeat;
+    font-weight: bold;
+    list-style: none;
+    margin-bottom: .2em;
+    padding: .15em 0 .5em 1.5em;
+    text-indent: .4em;
+  }
+}
