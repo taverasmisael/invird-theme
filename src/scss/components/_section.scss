@@ -46,11 +46,13 @@
     padding: .5rem;
 
     .#{$selector}__title {
+      border: 0;
       margin: 0;
     }
   }
 
   .#{$selector}__title {
+    border: 0;
     color: $c-primary--ligth;
     font-weight: bold;
     margin: .8em 0;
