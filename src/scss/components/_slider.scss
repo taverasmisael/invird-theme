@@ -7,7 +7,7 @@
     width: 100%;
     &.#{$selector}__container--multi {
       .slide {
-        padding: 0 1rem;
+        padding: 0 .5rem;
       }
     }
   }
@@ -30,7 +30,7 @@
         display: block;
         font-size: 1.4em;
         margin: 0;
-        padding: 0.4em;
+        padding: .4em;
         text-align: center;
         background: $c-primary--ligth;
         color: white;
@@ -43,7 +43,7 @@
     color: $c-white;
     font-size: 2.4rem;
     height: 1em;
-    opacity: 0.2;
+    opacity: .4;
     outline: none;
     position: absolute;
     text-align: center;

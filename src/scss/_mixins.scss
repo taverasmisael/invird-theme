@@ -2,12 +2,12 @@
   @if($full) {
     @include make-container;
     @media (min-width: 40em) {
-      max-width: 71.25rem;
+      max-width: $g-container-w;
     }
   } @else {
     @media (min-width: 40em) {
       @include make-container;
-      max-width: 71.25rem;
+      max-width: $g-container-w;
     }
   }
 }

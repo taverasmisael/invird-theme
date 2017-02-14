@@ -1,6 +1,9 @@
 .header {
   $selector: 'header';
 
+  .#{$selector}__logo {
+    width: 50%;
+  }
   .#{$selector}__head {
     @include section-container(true);
 
@@ -52,6 +55,19 @@
       padding: 0 1rem;
      }
 
+    .dropdown-menu {
+      background: $c-primary;
+      border-color: transparent;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+
+      .nav-item .nav-link {
+        font-size: .9em;
+        padding: 1em;
+      }
+    }
+
     .navbar-toggler {
       font-size: 2rem;
       top: 4rem;
@@ -80,6 +96,9 @@
         .nav-link {
           color: $c-white;
           padding: 1.5em;
+          &:hover {
+            border-bottom: 0;
+          }
         }
       }
     }

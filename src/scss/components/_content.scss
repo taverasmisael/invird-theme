@@ -1,0 +1,19 @@
+.post,
+.article {
+  a {
+    border-bottom: 0px solid $c-accent;
+    position: relative;
+    &:after {
+      background: $c-accent;
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 250ms ease-in-out;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
