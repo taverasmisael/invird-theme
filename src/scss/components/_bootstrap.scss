@@ -23,3 +23,22 @@
     background: $c-accent;
   }
 }
+
+.form-control,
+.wpcf7-form-control {
+  border: 0;
+  border-bottom: 1px solid $c-grey--opaque;
+  border-radius: 0;
+  box-shadow: none;
+  transition: border-bottom-color 350ms ease;
+  width: 95%;
+
+  &:focus {
+    border-bottom-color: $c-accent;
+    outline: none;
+  }
+}
+
+.wpcf7-form-control {
+  width: 100%;
+}
