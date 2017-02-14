@@ -39,6 +39,16 @@
   }
 }
 
-.wpcf7-form-control {
-  width: 100%;
+.wpcf7-form {
+  label {
+    display: block;
+
+    &.is--inline {
+      display: inline-block;
+    }
+  }
+
+  .wpcf7-form-control {
+    width: 100%;
+  }
 }
