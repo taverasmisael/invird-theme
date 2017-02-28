@@ -5,10 +5,12 @@
 
   &.btn--special-effect {
     border-right: 0 solid transparent;
+    transition: border-right 350ms ease;
+    will-change: border-right;
 
     &:hover {
       border-right: 6px solid $c-text--opaque;
-      transition: background 350ms ease, color 350ms ease;
+      transition: border 350ms ease;
     }
   }
 
