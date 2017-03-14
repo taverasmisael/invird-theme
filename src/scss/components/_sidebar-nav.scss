@@ -1,0 +1,34 @@
+.sidebar-nav {
+  $selector: 'sidebar-nav';
+
+  .navbar {
+    .nav-link {
+      color: $c-white;
+      position: relative;
+      width: 90%;
+    }
+  }
+
+  .navbar-toggler {
+    color: $c-white;
+  }
+  @media (min-width: 768px) {
+    .navbar {
+      padding: 1rem 0;
+
+      .navbar-nav {
+        display: block;
+        width: 100%;
+      }
+
+      .nav-item {
+        display: block;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 1rem .5rem 1rem 1rem;
+      }
+    }
+  }
+}
