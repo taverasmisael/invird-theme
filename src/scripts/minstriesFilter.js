@@ -50,7 +50,7 @@ function createLinkElements(links) {
   return links.map(link => `
     <p class="col-12 col-sm-${linksSize} ministery">
       <span class="ministery__name">${link.name}</span>
-      <a href="${link.link}" class="ministery-link">${link.link}</a>
+      <a href="${link.link}" class="ministery__link">${link.link}</a>
     </p>
   `).join('')
 }
