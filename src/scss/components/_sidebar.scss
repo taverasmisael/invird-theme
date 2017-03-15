@@ -1,0 +1,20 @@
+.sidebar {
+  $selector: 'sidebar';
+
+  @media (min-width: 720px) {
+    position: relative;
+
+    &::after {
+      background: $c-grey--light;
+      border-radius: 25%;
+      content: '';
+      display: block;
+      height: 95%;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.widget {
+  $selector: 'widget';
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  padding: 0;
+
+  .#{$selector}__title,
+  .#{$selector}__content {
+    padding: 1rem .75rem;
+  }
+
+  .#{$selector}__title {
+    background: $c-grey--opaque;
+    color: $c-white;
+    font-size: 1.3rem;
+    margin: 0;
+    position: relative;
+
+    &.#{$selector}__title--primary {
+      background: $c-primary;
+      border: 1px solid $c-primary;
+    }
+
+    &.#{$selector}__title--light {
+      background: $c-primary--ligth;
+      border: 1px solid $c-primary--ligth;
+    }
+
+    &.#{$selector}__title--accent {
+      background: $c-accent;
+      border: 1px solid $c-accent;
+    }
+  }
+
+  .#{$selector}__content {
+    font-size: 1rem;
+  }
+
+  &.#{$selector}--sidebar {
+    background: $c-white;
+    border: 1px solid $c-grey--opaque;
+    border-radius: .2em;
+  }
+}
