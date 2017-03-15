@@ -38,7 +38,7 @@
 
   &.#{$selector}--sidebar {
     background: $c-white;
-    border: 1px solid $c-grey--opaque;
     border-radius: .2em;
+    box-shadow: 0 2px 2px  $c-grey--opaque;
   }
 }
