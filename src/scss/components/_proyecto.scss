@@ -1,0 +1,8 @@
+.proyecto {
+  $selector: 'proyecto';
+
+  .#{$selector}__ficha {
+    border-bottom: 3px solid $c-primary;
+    margin-bottom: 2rem;
+  }
+}
