@@ -350,74 +350,100 @@
         </div>
         <div class="row hidden-sm-down">
           <div class="col-12 mb-4">
-            <h5>Enlaces a <span id="mininstries-selector" class="footer__ministries__selector">Ministerios <small class="fa fa-caret-down"></small></span></h5>
+            <h4>Enlaces a
+              <select id="mininstries-selector" class="footer__ministries__selector">
+                <option value="ministeries">Ministerios</option>
+                <option value="institutions">Instituciones</option>
+                <option value="offices">Oficinas</option>
+                <option value="ALL">Ver Todos</option>
+              </select>
+            </h4>
           </div>
           <div class="col-12">
             <div class="row footer__ministries__list">
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de la Juventud</span>
-                <a href="www.juventud.gob.do" class="ministery-link">www.juventud.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de la Mujer</span>
-                <a href="www.mujer.gob.do" class="ministery-link">www.mujer.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de las Fuerzas Armadas</span>
-                <a href="www.fuerzasarmadas.mil.do" class="ministery-link">www.fuerzasarmadas.mil.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Salud Pública y Asistencia Social (SESPAS)</span>
-                <a href="www.sespas.gov.do" class="ministery-link">www.sespas.gov.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Trabajo</span>
-                <a href="www.set.gov.do" class="ministery-link">www.set.gov.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Turismo</span>
-                <a href="www.sectur.gob.do" class="ministery-link">www.sectur.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Oficina Presidencial de Tecnologías de la Información y Comunicación</span>
-                <a href="www.optic.gob.do" class="ministery-link">www.optic.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Banco Nacional de Fomento de la Vivienda y la Producción</span>
-                <a href="www.bnv.com.do" class="ministery-link">www.bnv.com.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Oficina Nacional de Estadísticas</span>
-                <a href="www.one.gob.do" class="ministery-link">www.one.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Hacienda</span>
-                <a href="www.hacienda.gov.do" class="ministery-link">www.hacienda.gov.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Obras Públicas</span>
-                <a href="www.seopc.gov.do" class="ministery-link">www.seopc.gov.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Medio Ambiente</span>
-                <a href="www.medioambiente.gob.do" class="ministery-link">www.medioambiente.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Industria y Comercio</span>
-                <a href="www.seic.gov.do" class="ministery-link">www.seic.gov.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Estado de Interior y Policía</span>
-                <a href="#" class="ministery-link">www.seip.gov.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Relaciones Exteriores</span>
-                <a href="#" class="ministery-link">www.mirex.gob.do</a>
-              </p>
-              <p class="col-12 col-sm-3 ministery">
-                <span class="ministery__name">Ministerio de Educación</span>
-                <a href="#" class="ministery-link">www.minerd.gob.do</a>
-              </p>
+              <noscript>
+                <h4>Debes tener Javascript instalado/activado para podr filtrar los enlaces</h4>
+                <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Educación</span>
+      <a href="www.minerd.gob.do" class="ministery-link">www.minerd.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Hacienda</span>
+      <a href="www.hacienda.gov.do" class="ministery-link">www.hacienda.gov.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Industria y Comercio</span>
+      <a href="www.seic.gov.do" class="ministery-link">www.seic.gov.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Interior y Policía</span>
+      <a href="www.seip.gov.do" class="ministery-link">www.seip.gov.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de la Juventud</span>
+      <a href="www.juventud.gob.do" class="ministery-link">www.juventud.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de la Mujer</span>
+      <a href="www.mujer.gob.do" class="ministery-link">www.mujer.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de las Fuerzas Armadas</span>
+      <a href="www.fuerzasarmadas.mil.do" class="ministery-link">www.fuerzasarmadas.mil.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Medio Ambiente</span>
+      <a href="www.medioambiente.gob.do" class="ministery-link">www.medioambiente.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Obras Públicas</span>
+      <a href="www.seopc.gov.do" class="ministery-link">www.seopc.gov.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Salud Pública y Asistencia Social (SESPAS)</span>
+      <a href="www.sespas.gov.do" class="ministery-link">www.sespas.gov.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Trabajo</span>
+      <a href="www.set.gov.do" class="ministery-link">www.set.gov.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Estado de Turismo</span>
+      <a href="www.sectur.gob.do" class="ministery-link">www.sectur.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-3 ministery">
+      <span class="ministery__name">Ministerio de Relaciones Exteriores</span>
+      <a href="www.mirex.gob.do" class="ministery-link">www.mirex.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-12 ministery">
+      <span class="ministery__name">Banco Nacional de Fomento de la Vivienda y la Producción</span>
+      <a href="www.bnv.com.do" class="ministery-link">www.bnv.com.do</a>
+    </p>
+
+    <p class="col-12 col-sm-6 ministery">
+      <span class="ministery__name">Oficina Presidencial de Tecnologías de la Información y Comunicación</span>
+      <a href="www.optic.gob.do" class="ministery-link">www.optic.gob.do</a>
+    </p>
+
+    <p class="col-12 col-sm-6 ministery">
+      <span class="ministery__name">Oficina Nacional de Estadísticas</span>
+      <a href="www.one.gob.do" class="ministery-link">www.one.gob.do</a>
+    </p>
+
+              </noscript>
             </div>
           </div>
         </div>
