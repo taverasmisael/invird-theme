@@ -2,6 +2,13 @@
   $selector: 'sidebar-nav';
 
   .navbar {
+    .nav-item {
+
+      &.active {
+        background: $c-accent;
+      }
+    }
+
     .nav-link {
       color: $c-white;
       position: relative;
@@ -23,6 +30,10 @@
 
       .nav-item {
         display: block;
+
+        &.active {
+          box-shadow: -4px 3px $c-accent--dark;
+        }
       }
 
       .nav-link {
