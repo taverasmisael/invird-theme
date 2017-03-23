@@ -6,6 +6,7 @@ $c-primary--opaque: rgba($c-primary, .7);
 $c-primary--ligth: #0078b7; // Light Blue
 $c-primary--ligth--opaque: rgba($c-primary--ligth, .8); // Light Blue
 $c-accent: #d6193f; // Red
+$c-accent--dark: darken($c-accent, 20); // Red
 $c-accent--blue: #1c485f;
 $c-white: #fff;
 $c-white--opaque: rgba($c-white, .7);
