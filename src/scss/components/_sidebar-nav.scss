@@ -15,7 +15,11 @@
       width: 90%;
     }
   }
-
+  .dropdown-menu {
+    .nav-link {
+      color: $c-primary;
+    }
+  }
   .navbar-toggler {
     color: $c-white;
   }
